@@ -1,0 +1,19 @@
+{
+  "title": "About",
+  "quote": "\"In order to be irreplaceable, one must always be different.\"  Coco Chanel.",
+  "role": "Software Developer & Web Designer",
+  "italicQuote": "“Experience is the name everyone gives to their mistakes.” – Oscar Wilde",
+  "image": "/assets/img/avatar2.jpg",
+  "infoLeft": [
+    { "label": "Birthday", "value": "29 October 1981" },
+    { "label": "Website", "value": "https://karart1981.github.io/", "link": "https://karart1981.github.io/" },
+    { "label": "Phone", "value": "+374 94 662 370", "link": "tel:0037494662370" },
+    { "label": "City", "value": "Yerevan, Armenia" }
+  ],
+  "infoRight": [
+    { "label": "Age", "value": "" },
+    { "label": "Degree", "value": "Middle" },
+    { "label": "E-mail", "value": "karapart1981@gmail.com" },
+    { "label": "Freelance", "value": "Available" }
+  ]
+}
