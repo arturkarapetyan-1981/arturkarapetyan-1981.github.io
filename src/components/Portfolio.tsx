@@ -154,6 +154,13 @@ const portfolioItems: PortfolioItem[] = [
     images: ["/app/app-6.png", "/app/app-6-1.png", "/app/app-6-2.png", "/app/app-6-3.png", "/app/app-6-4.png", "/app/app-6-5.png"],
     link: "https://photo-editor-js-ten.vercel.app/",
   },
+  {
+    id: 21,
+    title: "Memory Match",
+    category: "Games",
+    images: ["/games/game-4-1.png", "/games/game-4-2.png", "/games/game-4-3.png", "/games/game-4-4.png", "/games/game-4-5.png"],
+    link: "https://memory-match-js.vercel.app/",
+  },
 
 
 ];
