@@ -8,15 +8,15 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { href: "#hero", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#resume", label: "Resume" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#certificates", label: "Certificates" },
-    { href: "#books", label: "Books" },
-    { href: "#skills", label: "Skills" }, // ✅ Added Skills
-    { href: "#services", label: "Services" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/resume", label: "Resume" },
+    { href: "/portfolio", label: "Portfolio" },
+    { href: "/certificates", label: "Certificates" },
+    { href: "/books", label: "Books" },
+    { href: "/skills", label: "Skills" }, 
+    { href: "/services", label: "Services" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
       <header className="fixed top-0 left-0 w-full z-30 bg-black/40 backdrop-blur">
         <div className="flex justify-between items-center px-6 py-4">
           {/* Logo instead of text */}
-          <a href="#hero" className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-2">
             <Image
               src="/logo.png"
               alt="Logo"

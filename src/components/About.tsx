@@ -20,7 +20,6 @@ const About: React.FC = () => {
 
   return (
     <section
-      id="about"
       className="min-h-screen flex items-center bg-linear-to-r from-cyan-900 to-blue-900 text-white px-6 lg:px-20 py-12"
     >
       <div className="w-full max-w-6xl mx-auto">
