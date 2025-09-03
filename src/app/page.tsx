@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="flex">
-      <div className="flex-1 select-none">
+      <div className="flex-1">
         <Hero />
         <About />
         <Skills />
