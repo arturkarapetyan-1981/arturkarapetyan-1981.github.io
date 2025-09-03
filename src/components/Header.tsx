@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from 'next/link'
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
       <header className="fixed top-0 left-0 w-full z-30 bg-black/40 backdrop-blur">
         <div className="flex justify-between items-center px-6 py-4">
           {/* Logo instead of text */}
-          <a href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/logo.png"
               alt="Logo"
@@ -33,7 +34,7 @@ const Header: React.FC = () => {
               height={40}
               className="w-10 h-10 object-contain"
             />
-          </a>
+          </Link>
 
           {/* Hamburger (controls sidebar) */}
           <button className="text-white" onClick={() => setMenuOpen(true)}>
@@ -63,40 +64,40 @@ const Header: React.FC = () => {
             />
             <h2 className="text-2xl font-bold mb-2">Artur Karapetyan</h2>
             <div className="flex space-x-4 mt-2">
-              <a
+              <Link
                 href="https://www.upwork.com/freelancers/~0181348e188e66da22"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-upwork text-xl"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://github.com/karart1981"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-github text-xl"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/artur-karapetyan-b24a26235/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="bx bxl-linkedin text-xl"></i>
-              </a>
+              </Link>
             </div>
           </div>
 
           {/* Navigation */}
           <nav className="flex flex-col space-y-3 text-lg">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </aside>
