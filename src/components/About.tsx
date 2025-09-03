@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const About: React.FC = () => {
   const [age, setAge] = useState<number | null>(null);
 
-  // Calculate age automatically
   useEffect(() => {
     const birthDate = new Date("1981-10-29");
     const today = new Date();
@@ -19,20 +19,21 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section
-      className="min-h-screen flex items-center bg-linear-to-r from-cyan-900 to-blue-900 text-white px-6 lg:px-20 py-12"
-    >
+    <section className="min-h-screen flex items-center bg-gradient-to-r from-cyan-900 to-blue-900 text-white px-4 sm:px-6 lg:px-20 py-12">
       <div className="w-full max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-white pt-16">About</h2>
-          <p className="text-lg italic text-gray-200">
-            In order to be irreplaceable, one must always be different – Coco Chanel
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white pt-12 sm:pt-16">
+            About
+          </h2>
+          <p className="text-base sm:text-lg italic text-gray-200 px-2">
+            In order to be irreplaceable, one must always be different – Coco
+            Chanel
           </p>
         </div>
 
         {/* Content Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
           {/* Left Image */}
           <div className="lg:col-span-4 flex justify-center">
             <Image
@@ -40,73 +41,70 @@ const About: React.FC = () => {
               alt="My Photo"
               width={350}
               height={350}
-              className="rounded-lg shadow-lg object-cover"
+              className="rounded-lg shadow-lg object-cover w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80"
             />
           </div>
 
           {/* Right Content */}
-          <div className="lg:col-span-8 space-y-6">
-            <h3 className="text-2xl font-semibold">
+          <div className="lg:col-span-8 space-y-6 text-center sm:text-left">
+            <h3 className="text-xl sm:text-2xl font-semibold">
               Software Developer &amp; Web Designer
             </h3>
-            <p className="italic text-gray-200">
+            <p className="italic text-gray-200 text-sm sm:text-base">
               “Experience is the name everyone gives to their mistakes.” – Oscar Wilde
             </p>
 
             {/* Info Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ul className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm sm:text-base">
+              <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <strong>Birthday:</strong> <span>29 October 1981</span>
                 </li>
                 <li>
                   <strong>Website:</strong>{" "}
-                  <a
+                  <Link
                     href="https://portfolio-nb75.vercel.app/"
-                    className="text-gray-300 hover:underline"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:underline break-words"
                   >
                     Portfolio website
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <strong>GitHub:</strong>{" "}
-                  <a
+                  <Link
                     href="https://github.com/arturkarapetyan-1981"
-                    className="text-gray-300 hover:underline"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:underline break-words"
                   >
-                    https://github.com/arturkarapetyan-1981
-                  </a>
+                    github.com/arturkarapetyan-1981
+                  </Link>
                 </li>
                 <li>
                   <strong>LinkedIn:</strong>{" "}
-                  <a
+                  <Link
                     href="https://www.linkedin.com/in/artur-karapetyan-b24a26235/"
-                    className="text-gray-300 hover:underline"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:underline break-words"
                   >
-                    https://www.linkedin.com/in/artur-karapetyan-b24a26235/
-                  </a>
+                    linkedin.com/in/artur-karapetyan-b24a26235
+                  </Link>
                 </li>
                 <li>
                   <strong>Phone:</strong>{" "}
-                  <a
-                    href="tel:0037494662370"
-                    className="text-gray-300 hover:underline"
-                  >
+                  <Link href="tel:0037494662370" className="text-gray-300 hover:underline">
                     +374 94 662 370
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <strong>City:</strong> <span>Yerevan, Armenia</span>
                 </li>
               </ul>
 
-              <ul className="space-y-3">
+              <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <strong>Age:</strong>{" "}
                   <span>{age !== null ? age : "Loading..."}</span>
@@ -116,12 +114,12 @@ const About: React.FC = () => {
                 </li>
                 <li>
                   <strong>E-mail:</strong>{" "}
-                  <a
+                  <Link
                     href="mailto:arturkarapetyanforwork@gmail.com"
-                    className="text-gray-200 hover:underline"
+                    className="text-gray-200 hover:underline break-words"
                   >
                     arturkarapetyanforwork@gmail.com
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <strong>Freelance:</strong> <span>Available</span>
@@ -136,6 +134,7 @@ const About: React.FC = () => {
 };
 
 export default About;
+
 
 
 

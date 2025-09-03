@@ -9,7 +9,6 @@ const Contact: FC = () => {
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     const form = e.currentTarget;
 
     try {
@@ -29,46 +28,51 @@ const Contact: FC = () => {
   };
 
   return (
-    <section id="contact" className="py-32 bg-gray-50 bg-gradient-to-r from-cyan-900 to-blue-900">
-      <div className="container mx-auto px-4">
+    <section
+      id="contact"
+      className="py-24 sm:py-32 bg-gradient-to-r from-cyan-900 to-blue-900"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white">Contact</h2>
-          <p className="mt-2 text-white max-w-2xl mx-auto italic">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">Contact</h2>
+          <p className="mt-2 text-white max-w-2xl mx-auto text-sm sm:text-base italic px-2">
             Honesty is the cornerstone of all success, without which confidence
             and ability to perform shall cease to exist. — Mary Kay Ash
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8" data-aos="fade-in">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-aos="fade-in">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="bg-white shadow-md rounded-2xl p-6 flex items-start gap-4">
-              <MapPin className="text-pink-500 w-6 h-6" />
+            <div className="bg-white shadow-md rounded-2xl p-4 sm:p-6 flex items-start gap-3 sm:gap-4">
+              <MapPin className="text-pink-500 w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
               <div>
-                <h4 className="font-semibold text-gray-800">Location:</h4>
-                <p className="text-gray-600">
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Location:</h4>
+                <p className="text-gray-600 text-sm sm:text-base">
                   123-11 Arno Babajanyan Street, Yerevan, Armenia
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-2xl p-6 flex items-start gap-4">
-              <Mail className="text-pink-500 w-6 h-6" />
+            <div className="bg-white shadow-md rounded-2xl p-4 sm:p-6 flex items-start gap-3 sm:gap-4">
+              <Mail className="text-pink-500 w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
               <div>
-                <h4 className="font-semibold text-gray-800">Email:</h4>
-                <p className="text-gray-600">arturkarapetyanforwork@gmail.com</p>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Email:</h4>
+                <p className="text-gray-600 text-sm sm:text-base break-words">
+                  arturkarapetyanforwork@gmail.com
+                </p>
               </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-2xl p-6 flex items-start gap-4">
-              <Phone className="text-pink-500 w-6 h-6" />
+            <div className="bg-white shadow-md rounded-2xl p-4 sm:p-6 flex items-start gap-3 sm:gap-4">
+              <Phone className="text-pink-500 w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
               <div>
-                <h4 className="font-semibold text-gray-800">Call:</h4>
+                <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Call:</h4>
                 <p>
                   <a
                     href="tel:0037494662370"
-                    className="text-pink-600 hover:underline"
+                    className="text-pink-600 hover:underline text-sm sm:text-base"
                   >
                     +374 94 662 370
                   </a>
@@ -79,7 +83,7 @@ const Contact: FC = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.036682422285!2d44.441061314753625!3d40.1637369789121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abe77b1428553%3A0x476151f2b3b86987!2s123%20Arno%20Babajanyan%20St%2C%20Yerevan%2C%20Armenia!5e0!3m2!1sen!2s!4v1664626924564!5m2!1sen!2s"
               title="Map of my office"
-              className="rounded-2xl w-full h-72 border-0"
+              className="rounded-2xl w-full h-56 sm:h-72 border-0"
               loading="lazy"
             ></iframe>
           </div>
@@ -88,7 +92,7 @@ const Contact: FC = () => {
           <form
             id="contact-form"
             onSubmit={sendEmail}
-            className="bg-white shadow-md rounded-2xl p-6 space-y-4"
+            className="bg-white shadow-md rounded-2xl p-4 sm:p-6 space-y-4"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
@@ -100,7 +104,7 @@ const Contact: FC = () => {
                   name="from_name"
                   id="name"
                   required
-                  className="w-full p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500"
+                  className="w-full p-2 sm:p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 text-sm sm:text-base"
                 />
               </div>
               <div>
@@ -112,7 +116,7 @@ const Contact: FC = () => {
                   name="reply_to"
                   id="email"
                   required
-                  className="w-full p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500"
+                  className="w-full p-2 sm:p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 text-sm sm:text-base"
                 />
               </div>
             </div>
@@ -125,7 +129,7 @@ const Contact: FC = () => {
                 name="subject"
                 id="subject"
                 required
-                className="w-full p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500"
+                className="w-full p-2 sm:p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 text-sm sm:text-base"
               />
             </div>
             <div>
@@ -135,15 +139,15 @@ const Contact: FC = () => {
               <textarea
                 name="message"
                 id="message"
-                rows={6}
+                rows={5}
                 required
-                className="w-full p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500"
+                className="w-full p-2 sm:p-3 mt-1 border rounded-lg focus:ring-2 focus:ring-pink-500 text-sm sm:text-base"
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="px-6 py-3 bg-[var(--red)] text-white font-semibold rounded-lg hover:bg-[var(--dark-red)] transition cursor-pointer"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-[var(--red)] text-white font-semibold rounded-lg hover:bg-[var(--dark-red)] transition cursor-pointer text-sm sm:text-base"
               >
                 Send Message
               </button>
@@ -159,3 +163,5 @@ const Contact: FC = () => {
 };
 
 export default Contact;
+
+
