@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BackToTopButton from "@/components/BackToTopButton";
 import Header from "@/components/Header";
-
+import FullScreen from "@/components/FullScreen"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <BackToTopButton />
+        <FullScreen />
       </body>
     </html>
   );
