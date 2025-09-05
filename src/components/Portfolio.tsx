@@ -161,6 +161,20 @@ const portfolioItems: PortfolioItem[] = [
     images: ["/games/game-4-1.png", "/games/game-4-2.png", "/games/game-4-3.png", "/games/game-4-4.png", "/games/game-4-5.png"],
     link: "https://memory-match-js.vercel.app/",
   },
+  {
+    id: 22,
+    title: "Puzzle Game",
+    category: "Games",
+    images: ["/games/game-5.png", "/games/game-5-1.png", "/games/game-5-2.png", "/games/game-5-3.png", "/games/game-5-4.png"],
+    link: "https://puzzle-game-alpha-ashy.vercel.app/",
+  },
+  {
+    id: 23,
+    title: "Quiz Game",
+    category: "Games",
+    images: ["/games/game-6.png", "/games/game-6-1.png", "/games/game-6-2.png", "/games/game-6-3.png", "/games/game-6-4.png"],
+    link: "https://quiz-game-theta-taupe.vercel.app/",
+  }
 
 
 ];
