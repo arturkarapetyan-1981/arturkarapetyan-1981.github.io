@@ -174,9 +174,21 @@ const portfolioItems: PortfolioItem[] = [
     category: "Games",
     images: ["/games/game-6.png", "/games/game-6-1.png", "/games/game-6-2.png", "/games/game-6-3.png", "/games/game-6-4.png"],
     link: "https://quiz-game-theta-taupe.vercel.app/",
-  }
-
-
+  },
+  {
+    id: 24,
+    title: "Bappa Flour Mill",
+    category: "Template",
+    images: ["/templates/temp-6.png", "/templates/temp-6-1.png", "/templates/temp-6-2.png", "/templates/temp-6-3.png", "/templates/temp-6-4.png"],
+    link: "https://bappa-flour-mill.vercel.app/",
+  },
+  {
+    id: 25,
+    title: "Portfolio Template",
+    category: "Template",
+    images: ["/templates/temp-7.png", "/templates/temp-7-1.png", "/templates/temp-7-2.png", "/templates/temp-7-3.png", "/templates/temp-7-4.png"],
+    link: "https://portfolio-template-nu-lime.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
@@ -188,7 +200,7 @@ export default function Portfolio() {
     index: 0,
   });
 
-  const filters = ["*", "App", "Games", "Web", "Template"]; // ✅ removed Professional books
+  const filters = ["*", "App", "Games", "Web", "Template"];
 
   const filteredItems =
     activeFilter === "*"
@@ -236,7 +248,7 @@ export default function Portfolio() {
               key={filter}
               onClick={() => {
                 setActiveFilter(filter);
-                setVisibleCount(6); // reset visible count on filter change
+                setVisibleCount(6);
               }}
               className={`px-5 py-2 rounded-full border transition cursor-pointer ${
                 activeFilter === filter
@@ -265,7 +277,10 @@ export default function Portfolio() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-4 transition">
+              <div
+                className="absolute inset-0 flex items-center justify-center gap-4 transition
+                opacity-100 md:opacity-0 md:group-hover:opacity-100"
+              >
                 <button
                   onClick={() => openLightbox(item.images, 0)}
                   className="p-3 bg-white rounded-full hover:bg-gray-100"
@@ -313,6 +328,7 @@ export default function Portfolio() {
     </section>
   );
 }
+
 
 
 

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ZoomIn } from "lucide-react";
 
 interface BookItem {
   id: number;
@@ -14,7 +14,7 @@ interface BookItem {
 }
 
 const bookItems: BookItem[] = [
-  {
+    {
     id: 1,
     title: "Изучайте Java простым способом",
     author: "Брайсона Пейна",
@@ -47,7 +47,7 @@ const bookItems: BookItem[] = [
     author: "Luis Atencio",
     category: "Java Script",
     images: ["/books/english/book-4.jpg"],
-    link: "https://drive.google.com/file/d/101JCPXZhrUGIV_X6bJKd7qJvApV-r8s-/view?usp=sharing",
+    link: "https://archive.org/details/luis-funkcionalnoe-programmirovanie-na-java-script-kak-uluchshit",
     language: "English",
   },
   {
@@ -74,7 +74,7 @@ const bookItems: BookItem[] = [
     author: "Бенджамин Дж. Эванс, Джеймс Гоф, Крис Ньюланд",
     category: "Java",
     images: ["/books/russian/book-7.jpg"],
-    link: "https://drive.google.com/file/d/1JXiJPG6iXUbJWnMBHQKy9kDZhZTRaF4V/view?usp=sharing",
+    link: "https://online.fliphtml5.com/artur-portfolio/zifz/",
     language: "Russian",
   },
   {
@@ -83,7 +83,7 @@ const bookItems: BookItem[] = [
     author: "Томас Хантер II, Брайан Инглиш",
     category: "Java Script",
     images: ["/books/russian/book-8.jpg"],
-    link: "https://drive.google.com/file/d/1c8Mqz6PnliYs5zrWdCTFsbBMl3dxXFnp/view?usp=sharing",
+    link: "https://online.fliphtml5.com/elftw/jpwf/",
     language: "Russian",
   },
   {
@@ -92,7 +92,7 @@ const bookItems: BookItem[] = [
     author: "Томас Марк Тиленс",
     category: "Java Script",
     images: ["/books/russian/book-9.jpg"],
-    link: "https://drive.google.com/file/d/1FwRkXCNF7QD5sScmraKbKSuJ2AsFbQC2/view?usp=sharing",
+    link: "https://online.fliphtml5.com/artur-portfolio/eden/",
     language: "Russian",
   },
   {
@@ -101,7 +101,7 @@ const bookItems: BookItem[] = [
     author: "Paul Done",
     category: "Database",
     images: ["/books/english/book-10.jpg"],
-    link: "https://drive.google.com/file/d/1RCml8yrX3fq-d-NPMSCpnLKmgzQqpLnH/view?usp=sharing",
+    link: "https://online.fliphtml5.com/artur-portfolio/taaw/",
     language: "English",
   },
   {
@@ -119,7 +119,7 @@ const bookItems: BookItem[] = [
     author: "Yang Hu",
     category: "Java Script",
     images: ["/books/english/book-12.jpg"],
-    link: "https://drive.google.com/file/d/1aZvMfwYgXnlHvGwfolYXBD4B3wfwEnD0/view?usp=sharing",
+    link: "https://online.fliphtml5.com/artur-portfolio/hjuq/",
     language: "English",
   },
   {
@@ -155,7 +155,7 @@ const bookItems: BookItem[] = [
     author: "Парлог Николай",
     category: "Java",
     images: ["/books/russian/book-16.jpg"],
-    link: "https://drive.google.com/file/d/1IxvnvYkJf5dck_mccF-EUg3dE2Bniee9/view?usp=sharing",
+    link: "https://online.fliphtml5.com/elftw/jlml/",
     language: "Russian",
   },
   {
@@ -182,7 +182,7 @@ const bookItems: BookItem[] = [
     author: "Кириченко А. В.",
     category: "Java Script",
     images: ["/books/russian/book-19.jpg"],
-    link: "https://drive.google.com/file/d/1PGhfnM5fzU31XEwpmWGdyPsQHBuZHjWt/view?usp=sharing",
+    link: "https://online.fliphtml5.com/elftw/ldfk/",
     language: "Russian",
   },
   {
@@ -200,7 +200,7 @@ const bookItems: BookItem[] = [
     author: "David Knickerbocker",
     category: "Python",
     images: ["/books/english/book-21.jpg"],
-    link: "https://drive.google.com/file/d/1tbtzD7er_RC4i4SHxfJRG0UwoyKtUutj/view?usp=sharing",
+    link: "https://online.fliphtml5.com/artur-portfolio/xlrs/",
     language: "English",
   },
   {
@@ -218,7 +218,7 @@ const bookItems: BookItem[] = [
     author: "Луис Атенсио",
     category: "Java Script",
     images: ["/books/russian/book-23.jpg"],
-    link: "https://drive.google.com/file/d/1VoNNYIR1PayqKw4AzcHFjs7ns-MwBAcQ/view?usp=sharing",
+    link: "https://archive.org/details/luis-funkcionalnoe-programmirovanie-na-java-script-kak-uluchshit",
     language: "Russian",
   }
 ];
@@ -227,6 +227,7 @@ export default function Books() {
   const [activeLanguage, setActiveLanguage] = useState<string>("*");
   const [activeCategory, setActiveCategory] = useState<string>("*");
   const [visibleCount, setVisibleCount] = useState<number>(6);
+  const [zoomImage, setZoomImage] = useState<string | null>(null);
 
   const languages = ["*", "English", "Russian"];
   const categories = ["*", "Java", "Java Script", "Testing", "Database", "C#", "Python"];
@@ -306,15 +307,33 @@ export default function Books() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center gap-4 transition">
+              <div
+                className="
+                  absolute inset-0 
+                  flex items-center justify-center gap-4 
+                  bg-black/40
+                  opacity-100 md:opacity-0 
+                  md:group-hover:opacity-100 
+                  transition
+                "
+              >
+                {/* External Link */}
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-white rounded-full"
+                  className="p-3 bg-white rounded-full shadow-lg"
                 >
                   <ExternalLink className="w-6 h-6 text-gray-800" />
                 </a>
+
+                {/* Zoom */}
+                <button
+                  onClick={() => setZoomImage(item.images[0])}
+                  className="p-3 bg-white rounded-full shadow-lg"
+                >
+                  <ZoomIn className="w-6 h-6 text-gray-800" />
+                </button>
               </div>
 
               <div className="p-4">
@@ -341,9 +360,27 @@ export default function Books() {
           </div>
         )}
       </div>
+
+      {/* Zoom Modal */}
+      {zoomImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+          <button
+            onClick={() => setZoomImage(null)}
+            className="absolute top-5 right-5 text-white text-2xl"
+          >
+            ✕
+          </button>
+          <Image
+            src={zoomImage}
+            alt="Zoomed book"
+            width={600}
+            height={800}
+            className="rounded-lg max-h-[90vh] object-contain"
+          />
+        </div>
+      )}
     </section>
   );
 }
-
 
 
