@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Hamburger (controls sidebar) */}
-          <button className="text-white" onClick={() => setMenuOpen(true)}>
+          <button className="text-white cursor-pointer" onClick={() => setMenuOpen(true)}>
             <Menu size={28} />
           </button>
         </div>
