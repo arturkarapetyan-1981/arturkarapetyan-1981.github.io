@@ -15,22 +15,22 @@ interface BookItem {
 }
 
 const bookItems: BookItem[] = [
-        {
+      {
         id: 1,
         title: "Изучайте Java простым способом",
         author: "Брайсона Пейна",
         category: "Java",
         images: ["/books/russian/book-1.jpg"],
-        link: "https://drive.google.com/file/d/1bBItPIcICVJcRt8trgHvUpPpQ-OjxPL4/view?usp=drive_link",
+        link: "https://ia601003.us.archive.org/20/items/java_20250907/%D0%9B%D0%B5%D0%B3%D0%BA%D0%B8%D0%B8%CC%86%20%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%20%D0%B2%D1%8B%D1%83%D1%87%D0%B8%D1%82%D1%8C%20Java.pdf",
         language: "Russian",
       },
       {
         id: 2,
-        title: "Java: руководство для начинающих",
-        author: "Герберт Шильдт",
-        category: "Java",
+        title: "Разработка приложений на базе GPТ-4 и ChatGPT",
+        author: "Оливье Келен, Мари-Алис Блете",
+        category: "AI",
         images: ["/books/russian/book-2.jpg"],
-        link: "https://drive.google.com/file/d/10XrzI6P1q95kxQCh_V4LxbmPqawm6rGT/view?usp=drive_link",
+        link: "https://ia601009.us.archive.org/33/items/gpt-4-chat-gpt/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8%CC%86_%D0%BD%D0%B0_%D0%B1%D0%B0%D0%B7%D0%B5_GPT_4_%D0%B8_ChatGPT.pdf",
         language: "Russian",
       },
       {
@@ -39,17 +39,17 @@ const bookItems: BookItem[] = [
         author: "Jos Dirksen",
         category: "Java Script",
         images: ["/books/english/book-3.jpg"],
-        link: "https://drive.google.com/file/d/1YbxKcm1JD8r777hwJWX7R0iZySfYjbsG/view?usp=sharing",
+        link: "https://ia601000.us.archive.org/22/items/learn-three.js/Learn%20Three.js.pdf",
         language: "English",
       },
       {
         id: 4,
-        title: "Functional Programming in Javascript",
-        author: "Luis Atencio",
+        title: "ВЫ ПОКА ЕЩЕ НЕ ЗНАЕТЕ JS",
+        author: "КАЙЛ СИМПСОН",
         category: "Java Script",
-        images: ["/books/english/book-4.jpg"],
-        link: "https://archive.org/details/luis-funkcionalnoe-programmirovanie-na-java-script-kak-uluchshit",
-        language: "English",
+        images: ["/books/russian/book-4.jpg"],
+        link: "https://ia601603.us.archive.org/9/items/simpson-vy-poka-eshche-ne-znaete-js-poznakomtes-java-script-2-e-izdanie/Simpson_Vy_poka_eshche_ne_znaete_JS_Poznakomtes_JavaScript_2_e_izdanie.pdf",
+        language: "Russian",
       },
       {
         id: 5,
@@ -57,7 +57,7 @@ const bookItems: BookItem[] = [
         author: "Ольга Назина",
         category: "Testing",
         images: ["/books/russian/book-5.jpg"],
-        link: "https://drive.google.com/file/d/1KH9p8KxklRfExP5OJOqNWnUuiatIwZnV/view?usp=sharing",
+        link: "https://ia801605.us.archive.org/12/items/chto-takoe-testirovanie/Chto_takoe_testirovanie.pdf",
         language: "Russian",
       },
       {
@@ -66,7 +66,7 @@ const bookItems: BookItem[] = [
         author: "Дэвид Фланаган",
         category: "Java Script",
         images: ["/books/russian/book-6.jpg"],
-        link: "https://drive.google.com/file/d/1UaGj61eYZB2rtMeGqirlvmWsqQERLe25/view?usp=sharing",
+        link: "https://ia600206.us.archive.org/28/items/java-script.-7-2021/JavaScript.%20%D0%9F%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5%20%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%2C%207-%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%5B2021%5D%20%D0%A4%D0%BB%D1%8D%D0%BD%D0%B0%D0%B3%D0%B0%D0%BD.pdf",
         language: "Russian",
       },
       {
@@ -75,7 +75,7 @@ const bookItems: BookItem[] = [
         author: "Бенджамин Дж. Эванс, Джеймс Гоф, Крис Ньюланд",
         category: "Java",
         images: ["/books/russian/book-7.jpg"],
-        link: "https://online.fliphtml5.com/artur-portfolio/zifz/",
+        link: "https://ia600902.us.archive.org/15/items/java_optimizaciya_programm_bendzhamin_2019/java_optimizaciya_programm_bendzhamin_2019.pdf",
         language: "Russian",
       },
       {
@@ -84,7 +84,7 @@ const bookItems: BookItem[] = [
         author: "Томас Хантер II, Брайан Инглиш",
         category: "Java Script",
         images: ["/books/russian/book-8.jpg"],
-        link: "https://online.fliphtml5.com/elftw/jpwf/",
+        link: "https://ia601009.us.archive.org/16/items/javascript_202509/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B8%CC%86%20Javascript.pdf",
         language: "Russian",
       },
       {
@@ -93,7 +93,7 @@ const bookItems: BookItem[] = [
         author: "Томас Марк Тиленс",
         category: "Java Script",
         images: ["/books/russian/book-9.jpg"],
-        link: "https://online.fliphtml5.com/artur-portfolio/eden/",
+        link: "https://ia601004.us.archive.org/20/items/react-v-deystvii-2019-tomas/React_v_deystvii_2019_Tomas.pdf",
         language: "Russian",
       },
       {
@@ -102,7 +102,7 @@ const bookItems: BookItem[] = [
         author: "Paul Done",
         category: "Database",
         images: ["/books/english/book-10.jpg"],
-        link: "https://online.fliphtml5.com/artur-portfolio/taaw/",
+        link: "https://ia601005.us.archive.org/0/items/practical.-mongo-db.-aggregations/Practical.MongoDB.Aggregations.pdf",
         language: "English",
       },
       {
@@ -111,7 +111,7 @@ const bookItems: BookItem[] = [
         author: "John Sharp",
         category: "C#",
         images: ["/books/english/book-11.jpg"],
-        link: "https://drive.google.com/file/d/1VQB--xaoEGvsSM2jAe-nFKCUgbYCZTHL/view?usp=sharing",
+        link: "https://ia600207.us.archive.org/9/items/microsoft-visual-c-step-by-step-ninth-edition_202509/Microsoft%20Visual%20C%23%20Step%20by%20Step%2C%20Ninth%20Edition.pdf",
         language: "English",
       },
       {
@@ -120,7 +120,7 @@ const bookItems: BookItem[] = [
         author: "Yang Hu",
         category: "Java Script",
         images: ["/books/english/book-12.jpg"],
-        link: "https://online.fliphtml5.com/artur-portfolio/hjuq/",
+        link: "https://ia601301.us.archive.org/15/items/graphic-javascript-algorithms/Graphic%20Javascript%20Algorithms.pdf",
         language: "English",
       },
       {
@@ -129,7 +129,7 @@ const bookItems: BookItem[] = [
         author: "Марк Дж. Прайс",
         category: "C#",
         images: ["/books/russian/book-13.jpg"],
-        link: "https://drive.google.com/file/d/1IT8Jeh8GGNjKpx098WcIVAsx-iNOLEH2/view?usp=sharing",
+        link: "https://ia801004.us.archive.org/17/items/c_7_i__e2VFmzg/c_7_i__e2VFmzg.pdf",
         language: "Russian",
       },
       {
@@ -138,7 +138,7 @@ const bookItems: BookItem[] = [
         author: "Hassan Djirdeh, Nate Murray, and Ari Lerner",
         category: "Java Script",
         images: ["/books/english/book-14.jpg"],
-        link: "https://drive.google.com/file/d/1luvM5u73NU7586g8NPVcU1wEVq-8cS0W/view?usp=sharing",
+        link: "https://ia600909.us.archive.org/0/items/fullstack-vue-3t/Fullstack%20Vue%203t.pdf",
         language: "English",
       },
       {
@@ -147,7 +147,7 @@ const bookItems: BookItem[] = [
         author: "Дэвид Гриффитс, Дон Гриффитс",
         category: "Java Script",
         images: ["/books/russian/book-15.jpg"],
-        link: "https://drive.google.com/file/d/1lP40wJfGQaCH1nSskiiK2umZtn0hII0X/view?usp=sharing",
+        link: "https://ia601600.us.archive.org/8/items/1032-react-sbornik-receptov/1032_React-sbornik-receptov.pdf",
         language: "Russian",
       },
       {
@@ -156,7 +156,7 @@ const bookItems: BookItem[] = [
         author: "Парлог Николай",
         category: "Java",
         images: ["/books/russian/book-16.jpg"],
-        link: "https://online.fliphtml5.com/elftw/jlml/",
+        link: "https://ia601002.us.archive.org/14/items/java_20250907_202509/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5%D0%B8%CC%86%20Java.pdf",
         language: "Russian",
       },
       {
@@ -165,7 +165,7 @@ const bookItems: BookItem[] = [
         author: "Hugo Di Francesco",
         category: "Java Script",
         images: ["/books/english/book-17.jpeg"],
-        link: "https://drive.google.com/file/d/1nBdMboCNMQHABuVUs5nhwew6bcdu-pjm/view?usp=sharing",
+        link: "https://ia601300.us.archive.org/0/items/di_francesco_h_javascript_design_patterns_deliver_fast_and_e/di_francesco_h_javascript_design_patterns_deliver_fast_and_e.pdf",
         language: "English",
       },
       {
@@ -174,7 +174,7 @@ const bookItems: BookItem[] = [
         author: "Raymond Camden, Hugo Di Francesco, Clifford Gurney, Philip Kirkbride, and Maya Shavin",
         category: "Java Script",
         images: ["/books/english/book-18.jpg"],
-        link: "https://drive.google.com/file/d/1atXmU9xF2oo_NZ7_38S5wmewkz2K2FS_/view?usp=sharing",
+        link: "https://ia601301.us.archive.org/12/items/front-end-development-projects-with-vue.js/Front-End%20Development%20Projects%20with%20Vue.js.pdf",
         language: "English",
       },
       {
@@ -183,7 +183,7 @@ const bookItems: BookItem[] = [
         author: "Кириченко А. В.",
         category: "Java Script",
         images: ["/books/russian/book-19.jpg"],
-        link: "https://online.fliphtml5.com/elftw/ldfk/",
+        link: "https://ia601008.us.archive.org/16/items/java-script-front-end-copy/JavaScript%20%D0%B4%D0%BB%D1%8F%20FrontEnd-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2%20copy.pdf",
         language: "Russian",
       },
       {
@@ -192,7 +192,7 @@ const bookItems: BookItem[] = [
         author: "Натан Розенталс",
         category: "Java Script",
         images: ["/books/russian/book-20.jpg"],
-        link: "https://drive.google.com/file/d/1ihbf-78H1o0Dbb5cBJKBfAercU6SXW2A/view?usp=sharing",
+        link: "https://ia600506.us.archive.org/3/items/izuchaem-type-script-3-2019/Izuchaem_TypeScript_3_%282019%29.pdf",
         language: "Russian",
       },
       {
@@ -201,7 +201,7 @@ const bookItems: BookItem[] = [
         author: "David Knickerbocker",
         category: "Python",
         images: ["/books/english/book-21.jpg"],
-        link: "https://online.fliphtml5.com/artur-portfolio/xlrs/",
+        link: "https://ia600907.us.archive.org/31/items/29623753/29623753.pdf",
         language: "English",
       },
       {
@@ -210,18 +210,27 @@ const bookItems: BookItem[] = [
         author: "Джон Резиг, Беар Бибо, Йосик Марас",
         category: "Java Script",
         images: ["/books/russian/book-22.jpg"],
-        link: "https://drive.google.com/file/d/1MQbb8tZ4lQ07oii7JvI-PrCpfRN61fY0/view?usp=sharing",
+        link: "https://ia601003.us.archive.org/11/items/javascript_20250907/%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20javascript%20%D0%BD%D0%B8%D0%BD%D0%B4%D0%B7%D1%8F.pdf",
         language: "Russian",
       },
       {
         id: 23,
-        title: "Функциональное программирование на JavaScript",
-        author: "Луис Атенсио",
+        title: "React и Redux, ФУНКЦИОНАЛЬНАЯ ВЕБ-РАЗРАБОТКА",
+        author: "Алекс Бэнкс, Ева Порселло",
         category: "Java Script",
         images: ["/books/russian/book-23.jpg"],
-        link: "https://archive.org/details/luis-funkcionalnoe-programmirovanie-na-java-script-kak-uluchshit",
+        link: "https://ia601600.us.archive.org/34/items/1424-react-redux/1424_React_Redux.pdf",
         language: "Russian",
-      }
+      },
+      {
+        id: 24,
+        title: "Just React!",
+        author: "Hari Narayn",
+        category: "Java Script",
+        images: ["/books/english/book-24.jpeg"],
+        link: "https://ia601600.us.archive.org/21/items/just-react/Just%20React%21.pdf",
+        language: "English",
+      },
 ];
 
 export default function Books() {
@@ -232,7 +241,7 @@ export default function Books() {
   const [activeCard, setActiveCard] = useState<number | null>(null); // track tapped card on mobile
 
   const languages = ["*", "English", "Russian"];
-  const categories = ["*", "Java", "Java Script", "Testing", "Database", "C#", "Python"];
+  const categories = ["*", "Java", "Java Script", "Testing", "Database", "C#", "Python", "AI"];
 
   const filteredItems = bookItems.filter((item) => {
     const matchLanguage = activeLanguage === "*" || item.language === activeLanguage;
