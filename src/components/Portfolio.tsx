@@ -335,6 +335,45 @@ const portfolioItems: PortfolioItem[] = [
     ],
     link: "https://portfolio-template-nu-lime.vercel.app/",
   },
+  {
+    id: 26,
+    title: "Piano",
+    category: "App",
+    images: [
+      "/app/app-7.png",
+      "/app/app-7-1.png",
+      "/app/app-7-2.png",
+      "/app/app-7-3.png",
+      "/app/app-7-4.png",
+    ],
+    link: "https://piano-app-six.vercel.app/",
+  },
+  {
+    id: 27,
+    title: "Restaurant template",
+    category: "Template",
+    images: [
+      "/templates/temp-8.png",
+      "/templates/temp-8-1.png",
+      "/templates/temp-8-2.png",
+      "/templates/temp-8-3.png",
+      "/templates/temp-8-4.png",
+    ],
+    link: "https://restaurant-temp-theta.vercel.app/",
+  },
+  {
+    id: 28,
+    title: "Unit Converter",
+    category: "App",
+    images: [
+      "/app/app-8.png",
+      "/app/app-8-1.png",
+      "/app/app-8-2.png",
+      "/app/app-8-3.png",
+      "/app/app-8-4.png",
+    ],
+    link: "https://unit-converter-theta-five.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
