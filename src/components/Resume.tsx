@@ -112,13 +112,12 @@ const Resume: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">
-                    Code Republic Lab, Picsart Academy
+                    HS Rocket
                   </h4>
-                  <h5 className="text-sm text-gray-200">2023 Jan – 2024 Feb</h5>
+                  <h5 className="text-sm text-gray-200">2022 May – 2025 May</h5>
                   <p className="italic">Software Developer</p>
                   <p className="mt-2 text-gray-200">
-                    Built real-world projects in parallel with studies at
-                    Picsart Academy.
+                    I created the frontend part of the projects in the company.
                   </p>
                 </div>
                 <div>

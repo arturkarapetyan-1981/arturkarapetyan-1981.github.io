@@ -4,7 +4,6 @@ import Certificates from "@/components/Certificates";
 import Skills from "@/components/Skills";
 import Resume from "@/components/Resume";
 import Portfolio from "@/components/Portfolio";
-import Books from "@/components/Books";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ export default function Home() {
         <Certificates />
         <Resume />
         <Portfolio />
-        <Books />
         <Services />
         <Contact />
         <Footer />
