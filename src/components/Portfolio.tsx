@@ -374,6 +374,19 @@ const portfolioItems: PortfolioItem[] = [
     ],
     link: "https://unit-converter-theta-five.vercel.app/",
   },
+  {
+    id: 29,
+    title: "Beauty salon with online booking",
+    category: "Web",
+    images: [
+      "/web/web-7.png",
+      "/web/web-7-1.png",
+      "/web/web-7-2.png",
+      "/web/web-7-3.png",
+      "/web/web-7-4.png",
+    ],
+    link: "https://beauty-salon-with-reservation.vercel.app/",
+  }
 ];
 
 export default function Portfolio() {
