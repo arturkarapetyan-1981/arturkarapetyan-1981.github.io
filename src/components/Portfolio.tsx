@@ -384,6 +384,7 @@ const portfolioItems: PortfolioItem[] = [
       "/web/web-7-2.png",
       "/web/web-7-3.png",
       "/web/web-7-4.png",
+      "/web/web-7-5.png"
     ],
     link: "https://beauty-salon-with-reservation.vercel.app/",
   }
