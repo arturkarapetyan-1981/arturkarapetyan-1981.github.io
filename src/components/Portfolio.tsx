@@ -132,7 +132,7 @@ const portfolioItems: PortfolioItem[] = [
       "/web/web-4-3.png",
       "/web/web-4-4.png",
       "/web/web-4-5.png",
-      "/web/web-4-6.png",
+      
       "/web/web-4-7.png",
       "/web/web-4-8.png",
       "/web/web-4-9.png",
