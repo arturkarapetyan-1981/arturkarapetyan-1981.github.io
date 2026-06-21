@@ -45,10 +45,10 @@ const Resume: React.FC = () => {
                 </li>
                 <li>✉️ 
                   <Link
-                    href= "mailto: arturkarapetyanforwork@gmail.com"
+                    href= "mailto: frontdevarturkar@gmail.com"
                     className="text-pink-300 hover:underline"
                   >
-                    arturkarapetyanforwork@gmail.com
+                    frontdevarturkar@gmail.com
                   </Link>
                 </li>
               </ul>

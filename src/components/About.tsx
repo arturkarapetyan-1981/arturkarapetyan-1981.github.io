@@ -115,10 +115,10 @@ const About: React.FC = () => {
                 <li>
                   <strong>E-mail:</strong>{" "}
                   <Link
-                    href="mailto:arturkarapetyanforwork@gmail.com"
+                    href="mailto:frontdevarturkar@gmail.com"
                     className="text-gray-200 hover:underline break-words"
                   >
-                    arturkarapetyanforwork@gmail.com
+                    frontdevarturkar@gmail.com
                   </Link>
                 </li>
                 <li>

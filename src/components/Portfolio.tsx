@@ -387,7 +387,33 @@ const portfolioItems: PortfolioItem[] = [
       "/web/web-7-5.png"
     ],
     link: "https://beauty-salon-with-reservation.vercel.app/",
-  }
+  },
+  {
+    id: 30,
+    title: "Restfood-kitchen atelier",
+    category: "Web",
+    images: [
+      "/web/web-8.png",
+      "/web/web-8-1.png",
+      "/web/web-8-2.png",
+      "/web/web-8-3.png",
+      "/web/web-8-4.png"
+    ],
+    link: "https://online-restaurant-cyan.vercel.app/",
+  },
+  {
+    id: 31,
+    title: "Barber shop",
+    category: "Web",
+    images: [
+      "/web/web-9.png",
+      "/web/web-9-1.png",
+      "/web/web-9-2.png",
+      "/web/web-9-3.png",
+      "/web/web-9-4.png"
+    ],
+    link: "https://barber-shop-cyprus.vercel.app/",
+  },
 ];
 
 export default function Portfolio() {
@@ -449,7 +475,7 @@ export default function Portfolio() {
       className="min-h-screen py-16 bg-gradient-to-r from-cyan-900 to-blue-900"
     >
       <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white pt-20">
+        <h2 className="text-3xl font-bold text-center mb-12 text-slate-200 pt-20">
           My Portfolio
         </h2>
 
@@ -554,7 +580,7 @@ export default function Portfolio() {
 
                 {/* Title + Category */}
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
+                  <h3 className="font-semibold text-lg text-slate-900">{item.title}</h3>
                   <p className="text-sm text-gray-500">{item.category}</p>
                 </div>
               </div>

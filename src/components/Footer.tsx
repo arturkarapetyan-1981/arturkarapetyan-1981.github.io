@@ -59,7 +59,7 @@ const Footer: FC = () => {
               Get in Touch
             </h4>
             <p className="text-sm">123-11 Arno Babajanyan St, Yerevan</p>
-            <p className="text-sm">Email: arturkarapetyanforwork@gmail.com</p>
+            <p className="text-sm">Email: frontdevarturkar@gmail.com</p>
             <p className="text-sm">
               Phone:{" "}
               <Link
